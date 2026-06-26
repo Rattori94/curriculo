@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Arcangelo Vettori — Desenvolvedor Júnior</title>
+  <style>
+    /* Reset e base ATS-friendly */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #f2f5f9; color: #1e293b; line-height: 1.5;
+      display: flex; justify-content: center; padding: 40px 20px;
+    }
+    .curriculo {
+      max-width: 800px; width: 100%; background: #ffffff;
+      border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+
+    /* Cabeçalho sóbrio */
+    .header {
+      background: #1e293b; color: #ffffff; padding: 32px 40px 24px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.3px; }
+    .header .cargo { font-size: 1.1rem; color: #93c5fd; margin: 4px 0 12px; font-weight: 500; }
+    .contato { font-size: 0.9rem; color: #cbd5e1; display: flex; flex-wrap: wrap; gap: 20px; }
+    .contato div { display: flex; align-items: center; gap: 4px; }
+    .contato a { color: #e2e8f0; text-decoration: none; border-bottom: 1px solid transparent; }
+    .contato a:hover { border-bottom-color: #e2e8f0; }
+
+    .corpo { padding: 32px 40px 40px; }
+
+    /* Seções */
+    .section { margin-bottom: 28px; }
+    .section h2 {
+      font-size: 1.1rem; font-weight: 700; color: #0f172a;
+      text-transform: uppercase; letter-spacing: 0.4px;
+      border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 12px;
+    }
+
+    .resumo p { font-size: 0.95rem; color: #334155; }
+
+    /* Competências */
+    .skill-block { display: flex; flex-wrap: wrap; gap: 32px; }
+    .skill-col { flex: 1 1 200px; }
+    .skill-col h3 { font-size: 0.9rem; font-weight: 600; color: #475569; margin-bottom: 8px; }
+    .badge-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .badge {
+      background: #f1f5f9; color: #1e293b; font-size: 0.75rem;
+      font-weight: 500; padding: 4px 10px; border-radius: 16px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Experiência e Formação */
+    .item { margin-bottom: 18px; }
+    .item-header { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 2px; }
+    .item-header h3 { font-size: 1rem; font-weight: 700; color: #0f172a; }
+    .item-header .data { font-size: 0.85rem; color: #64748b; font-weight: 500; }
+    .subtitulo { font-size: 0.9rem; color: #475569; font-weight: 500; margin-bottom: 4px; }
+    .item ul { margin-left: 18px; font-size: 0.9rem; color: #334155; }
+    .item ul li { margin-bottom: 2px; }
+
+    /* Projetos Acadêmicos */
+    .projeto { margin-bottom: 14px; }
+    .projeto h3 { font-size: 1rem; font-weight: 700; color: #0f172a; }
+    .projeto p { font-size: 0.9rem; color: #334155; }
+    .projeto .techs { font-size: 0.8rem; color: #64748b; margin-top: 2px; }
+
+    .idiomas, .info-adicional { font-size: 0.9rem; color: #334155; }
+
+    /* Impressão (PDF) */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .curriculo { box-shadow: none; border-radius: 0; max-width: 100%; }
+      .header { padding: 24px 28px 20px; }
+      .corpo { padding: 24px 28px 28px; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="curriculo">
+
+    <!-- Cabeçalho -->
+    <div class="header">
+      <h1>Rafael Arcangelo Vettori</h1>
+      <div class="cargo">Desenvolvedor Front-end / Full Stack Python</div>
+      <div class="contato">
+        <div>Florianópolis, SC</div>
+        <div>rafael.arcangelovettori@gmail.com</div>
+        <div>(48) 98869-0766</div>
+        <div><a href="https://www.linkedin.com/in/rafael-a-vettori-a566b5419/" target="_blank">LinkedIn</a></div>
+        <div><a href="https://github.com/rattori94" target="_blank">GitHub</a></div>
+      </div>
+    </div>
+
+    <!-- Corpo -->
+    <div class="corpo">
+
+      <!-- Resumo Profissional -->
+      <div class="section">
+        <h2>Resumo Profissional</h2>
+        <div class="resumo">
+          <p>
+            Profissional em transição para a área de tecnologia, com sólida experiência administrativa e forte capacidade de aprendizado. Atualmente cursando Desenvolvedor Full Stack Python pela EBAC, aplico disciplina diária nos estudos e desenvolvimento de projetos. Busco uma oportunidade como desenvolvedor júnior para contribuir com soluções web eficientes, colocando em prática conhecimentos em front-end e lógica de programação, aliados a habilidades como organização, cumprimento de prazos e resolução de problemas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Competências Técnicas -->
+      <div class="section">
+        <h2>Competências Técnicas</h2>
+        <div class="skill-block">
+          <div class="skill-col">
+            <h3>Linguagens & Marcação</h3>
+            <div class="badge-list">
+              <span class="badge">HTML5</span><span class="badge">CSS3</span>
+              <span class="badge">JavaScript (ES6+)</span><span class="badge">TypeScript</span>
+              <span class="badge">Sass</span>
+            </div>
+          </div>
+          <div class="skill-col">
+            <h3>Ferramentas & Build</h3>
+            <div class="badge-list">
+              <span class="badge">Git</span><span class="badge">GitHub</span>
+              <span class="badge">Gulp</span><span class="badge">Parcel</span>
+              <span class="badge">Babel</span>
+              <span class="badge">Vercel (deploy)</span>
+            </div>
+          </div>
+          <div class="skill-col">
+            <h3>Paradigmas & APIs</h3>
+            <div class="badge-list">
+              <span class="badge">Manipulação do DOM</span>
+              <span class="badge">Eventos</span>
+              <span class="badge">Fetch API</span>
+              <span class="badge">Async/Await</span>
+              <span class="badge">Promises</span>
+              <span class="badge">POO em JavaScript</span>
+              <span class="badge">Map, Set, Spread</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competências Comportamentais -->
+      <div class="section">
+        <h2>Competências Comportamentais</h2>
+        <div class="badge-list">
+          <span class="badge">Organização</span>
+          <span class="badge">Atenção a detalhes</span>
+          <span class="badge">Resolução de problemas</span>
+          <span class="badge">Trabalho em equipe</span>
+          <span class="badge">Atendimento a demandas</span>
+          <span class="badge">Responsabilidade</span>
+          <span class="badge">Cumprimento de prazos</span>
+          <span class="badge">Aprendizado rápido</span>
+        </div>
+      </div>
+
+      <!-- Experiência Profissional -->
+      <div class="section">
+        <h2>Experiência Profissional</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>Auxiliar Administrativo — FAESC</h3>
+            <span class="data">2014</span>
+          </div>
+          <ul>
+            <li>Responsável pelo controle de documentos e organização de arquivos físicos e digitais, garantindo acesso rápido à informação.</li>
+            <li>Atendimento a demandas internas e externas, desenvolvendo comunicação clara e solução de problemas cotidianos.</li>
+            <li>Alimentação de planilhas e sistemas, com atenção a prazos e consistência dos dados.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>Auxiliar Administrativo — Plantar — Assistência Técnica e Treinamentos, Ltda.</h3>
+            <span class="data">2018 — 2020</span>
+          </div>
+          <ul>
+            <li>Apoio na rotina de compras e estoque, conciliando entregas e garantindo a precisão dos registros.</li>
+            <li>Participação em equipe para reorganização de processos internos, contribuindo com sugestões que reduziram erros de cadastro.</li>
+            <li>Adaptação rápida a novas ferramentas e sistemas da empresa, auxiliando colegas na transição.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Formação Acadêmica -->
+      <div class="section">
+        <h2>Formação Acadêmica</h2>
+        <div class="item">
+          <div class="item-header">
+            <h3>Desenvolvedor Full Stack Python — EBAC</h3>
+            <span class="data">Cursando — previsão de conclusão 2026</span>
+          </div>
+          <div class="subtitulo">Escola Britânica de Artes Criativas e Tecnologia (online)</div>
+        </div>
+        <div class="item">
+          <div class="item-header">
+            <h3>Ensino Médio Completo</h3>
+            <span class="data">Concluído em 2012</span>
+          </div>
+          <div class="subtitulo">EEB Bom Pastor</div>
+        </div>
+        <div class="item">
+        <div class="item-header">
+            <h3>Ensino Superior Incompleto</h3>
+            <span class="data">2015</span>
+        </div>
+        <div class="subtitulo">Filosofia, UFSC</div>
+        </div>
+      </div>
+
+      <!-- Projetos Acadêmicos -->
+      <div class="section">
+        <h2>Projetos Acadêmicos</h2>
+        <div class="projeto">
+          <h3>Landing Page Responsiva — Módulo HTML/CSS</h3>
+          <p>Página institucional para uma empresa fictícia, adaptável a dispositivos móveis, utilizando HTML5 semântico, CSS3 com Flexbox e Grid, e pré-processador Sass.</p>
+          <div class="techs">HTML5 · CSS3 · Sass · Parcel</div>
+        </div>
+        <div class="projeto">
+          <h3>Lista de Tarefas com JavaScript</h3>
+          <p>Aplicação interativa que permite adicionar, remover e marcar tarefas como concluídas, utilizando manipulação do DOM, eventos e arrays.</p>
+          <div class="techs">JavaScript · DOM · Eventos · Git</div>
+        </div>
+        <div class="projeto">
+          <h3>Buscador de Imagens com Fetch API</h3>
+          <p>Consome uma API REST pública para buscar e exibir imagens, tratando estados de carregamento e erros com Promises e Async/Await.</p>
+          <div class="techs">JavaScript · Fetch API · Async/Await · Vercel</div>
+        </div>
+        <div class="projeto">
+          <h3>Formulário de Cadastro com TypeScript</h3>
+          <p>Formulário com validação de campos utilizando TypeScript para tipagem estática, interfaces e classes, integrando TypeScript ao DOM.</p>
+          <div class="techs">TypeScript · Classes · Interfaces · DOM</div>
+        </div>
+      </div>
+
+      <!-- Idiomas -->
+      <div class="section">
+        <h2>Idiomas</h2>
+        <div class="idiomas">
+          <p>Português — Nativo</p>
+          <p>Inglês — Avançado</p>
+        </div>
+      </div>
+
+      <!-- Informações Adicionais -->
+      <div class="section">
+        <h2>Informações Adicionais</h2>
+        <div class="info-adicional">
+          <p>Disponibilidade para trabalho remoto ou presencial em Florianópolis e região.</p>
+          <p>Participação ativa em comunidades online de desenvolvimento e desafios de código.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
