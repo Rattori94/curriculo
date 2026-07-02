@@ -29,7 +29,7 @@ Meu objetivo é conquistar uma oportunidade como Desenvolvedor Front-end, Desenv
 
 O currículo pode ser acessado através do arquivo abaixo:
 
-[Baixar Currículo (PDF)](./curriculo.pdf)
+[Baixar Currículo (PDF)](./curriculo+rafaelvettori.pdf)
 
 ## Portfólio
 
