@@ -1,44 +1,7 @@
 # Currículo
 
-Este repositório contém meu currículo profissional e faz parte do meu portfólio como estudante de Desenvolvimento Full Stack Python pela EBAC.
+Esse é o meu currículo em português, montado do zero em HTML e CSS. É a versão em PT do currículo que eu também tenho em inglês (repositório `cv-english`) — mesma pessoa, mesma trajetória, mas dois layouts diferentes, porque acabei aproveitando pra treinar a estrutura de página de duas formas distintas em vez de simplesmente traduzir uma pelo Google Tradutor. Aqui tem uma barra lateral com contato, stack e idiomas, e o conteúdo principal com resumo, experiência, formação e projetos. O repositório também guarda a versão em PDF do currículo e a foto que uso nele.
 
-## Sobre
+Foi um exercício bom de organizar informação de verdade — currículo não perdoa bagunça visual, então tive que pensar em hierarquia, espaçamento e legibilidade de um jeito mais criterioso do que num projeto qualquer de treino. Usei grid pra estruturar o layout em duas colunas, variáveis de CSS pra manter cor e espaçamento consistentes, e fui ajustando a responsividade pra funcionar bem tanto no navegador quanto quando alguém exporta a página em PDF. Também serviu como desculpa pra manter tudo atualizado conforme fui evoluindo no curso da EBAC, então o currículo foi mudando junto comigo.
 
-Atualmente estou em transição para a área de tecnologia, cursando Desenvolvimento Full Stack Python na EBAC e desenvolvendo projetos práticos para consolidar meus conhecimentos em desenvolvimento web.
-
-Meu objetivo é conquistar uma oportunidade como Desenvolvedor Front-end, Desenvolvedor Full Stack Júnior ou Estagiário em Desenvolvimento de Software, aplicando os conhecimentos adquiridos durante minha formação e evoluindo continuamente como profissional.
-
-## Competências Técnicas
-
-- HTML5
-- CSS3
-- Sass
-- JavaScript (ES6+)
-- TypeScript
-- Programação Orientada a Objetos
-- Manipulação do DOM
-- Consumo de APIs REST
-- Programação Assíncrona
-- Babel
-- Gulp
-- Parcel
-- Git
-- GitHub
-
-## Currículo
-
-O currículo pode ser acessado através do arquivo abaixo:
-
-[Baixar Currículo (PDF)](./curriculo+rafaelvettori.pdf)
-
-## Portfólio
-
-Ao longo do curso serão adicionados novos projetos desenvolvidos para demonstrar minha evolução técnica.
-
-## Contato
-
-**LinkedIn:** https://www.linkedin.com/in/rafael-a-vettori-a566b5419
-
-**GitHub:** https://github.com/Rattori94
-
-**E-mail:** rafael.arcangelovettori@gmail.com
+**Tecnologias e ferramentas:** HTML5, CSS3 (Grid, variáveis CSS, responsividade), Git e GitHub.
